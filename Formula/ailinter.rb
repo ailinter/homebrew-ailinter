@@ -1,26 +1,22 @@
 class Ailinter < Formula
   desc "AI-powered code quality linter and safety visor for AI-assisted development"
   homepage "https://github.com/ailinter/ailinter"
-  version "v1.0.0"
+  version "v1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ailinter/ailinter/releases/download/v1.0.0/ailinter_v1.0.0_darwin_arm64"
-      sha256 "185777e3d17ffe739653b6fa505f4e71c9b86b2b95897abc49d8d85592ef1d70"
+      sha256 "6b12d9c5d650328767dbec09c52b48728517fc12fca892f7434aebda3800b578"
     else
-      url "https://github.com/ailinter/ailinter/releases/download/v1.0.0/ailinter_v1.0.0_darwin_amd64"
-      sha256 "0b8f69b8d7e0ec0e6a25f0169392e9a2ed6e183dd4dcfcc79e93a417a37f9acc"
+      sha256 "f2784239d6443925fea137b2a059509f1753b335e6976181707f0b78221cd929"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ailinter/ailinter/releases/download/v1.0.0/ailinter_v1.0.0_linux_arm64"
-      sha256 "2096bde679a3d6b6892d3e557af0492691488470382f1d0b74e3d6fc0a06d209"
+      sha256 "61bb81755c23cd395bfda511d900830c8fbbba9a5b9c092246c1e3e5d5fa7b4b"
     else
-      url "https://github.com/ailinter/ailinter/releases/download/v1.0.0/ailinter_v1.0.0_linux_amd64"
-      sha256 "8af90bbf28fa6b9ddb353a359bce3446309cab9808a12fb3cd627baa8c7ad6ca"
+      sha256 "fad7a1754d4808a50b316f7022b1a234bf63f7f5e3ae4fea91598b0c43d5992e"
     end
   end
 
